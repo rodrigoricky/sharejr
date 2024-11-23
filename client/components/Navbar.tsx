@@ -14,16 +14,9 @@ const Navbar = () => {
         <div className="flex justify-center items-center">
           <Image className="h-12 w-12 p-0 rotate-90 scale-0 hidden dark:flex dark:scale-100" src={fastDropLight} alt="fastdrop"/>
           <Image className="h-12 w-12 p-0 rotate-90 scale-100 flex dark:scale-0 dark:hidden" src={fastDropDark} alt="fastdrop"/>
-          FileDrop
+          ShareJR
         </div>
         <div className="flex gap-x-2">
-          <div>
-            <Button type="button" className="p-3" variant="ghost">
-              <Link href={"https://github.com/YugBhanushali/FileDrop"}>
-                <GithubIcon size={18}/>
-              </Link>
-            </Button>
-          </div>
           <div>
             <ThemeBtn />
           </div>
