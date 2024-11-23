@@ -9,8 +9,7 @@ const Home = () => {
     <div className="flex flex-col mt-[30vh] justify-center items-center">
       <h1 className="sm:text-3xl text-xl sm:w-[410px] text-center font-extrabold tracking-wide">
         {/* Share your files 📁 by making P2P 🤝 connection and you can chat 💬 too. */}
-        Share Files Seamlessly 🌐, Connect P2P 🤝, and Chat Instantly 💬 with
-        FileDrop!
+        Share files in another device in just matter of seconds!
       </h1>
       <InfoToolTip />
       <Link href="/transfer">
