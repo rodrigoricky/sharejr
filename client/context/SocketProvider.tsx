@@ -24,14 +24,16 @@ export const useSocket = () => {
   return socket;
 };
 
+const customNanoid = customAlphabet('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz', 10);
+
 export const SocketProvider = ({ children }: { children: React.ReactNode }) => {
   const socket = useMemo(() => {
-    return io(String(process.env.NEXT_PUBLIC_SOCKET_SERVER_URL));
+    return io(String('http://localhost:8000'));
   }, []);
   const [peerState, setpeerState] = useState<any>();
   const [SocketId, setSocketId] = useState<any>(socket);
   const userId = useMemo(() => {
-    return nanoid(10);
+    return customNanoid();
   }, []);
   return (
     <SocketContext.Provider
