@@ -9,15 +9,9 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "FileDrop",
+  title: "ShareJR",
   description:
-    "FileDrop: Swift P2P file sharing and real-time chat. Experience seamless, secure data exchange with our WebRTC-powered Next.js app. Join us for instant messaging and efficient file transfer in a modern, user-friendly environment.",
-  authors: [
-    {
-      name: "Yug Bhanushali",
-      url: "https://github.com/YugBhanushali",
-    },
-  ],
+    "ShareJR: A fast, simple, and privacy-focused file sharing service.",
   keywords: keywordsForMetaData,
   icons: {
     icon: "./fastdroplight.png",
